@@ -1,0 +1,155 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root
+{
+    --font-color : rgb(0, 0, 78);
+    --font-color-deep : rgb(0, 0, 34) ; 
+}
+
+.container
+{
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(100deg,rgb(253, 222, 175) ,rgb(254, 255, 171));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.app
+{
+    top: 20vh;
+    height: 70vh;
+    width: 70vw;
+    background: rgba(0, 0, 0, 0.575);
+    border-radius: 7px;
+    position: absolute;
+}
+
+.head
+{
+    height: 12%;
+    width: 100%;
+    position: relative;
+    background: white;
+    /* border-bottom: 1px solid orangered; */
+    border-top-right-radius: 7px;
+    border-top-left-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: var(--font-color);
+    letter-spacing: 1px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.mid
+{
+    height: 76%;
+    width: 100%;
+    background: rgb(179, 179, 179);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.mid-left
+{
+    /* border: 1px solid black; */
+    height: 100%;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+    padding: 4%;
+    padding-bottom: 12%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.mid-right
+{
+    /* border: 1px solid black; */
+    height: 100%;
+    width: 60%;
+    padding: 60px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.textarea
+{
+    height: 80%;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    outline: none;
+}
+
+.bottom
+{
+    height: 12%;
+    width: 100%;
+    border-bottom-right-radius: 7px;
+    border-bottom-left-radius: 7px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-top: px solid rgb(95, 95, 95);
+}
+
+.btn
+{
+    height: 60%;
+    width: 18%;
+    border: none;
+    border-radius: 7px;
+    background: linear-gradient(100deg,rgb(255, 153, 0) ,rgb(251, 255, 37));
+    cursor: pointer;
+    font-size: 16px;
+    color: var(--font-color);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    letter-spacing: 1px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.4s;
+}
+
+#voices
+{
+    height: 12%;
+    outline: none;
+    border: none;
+    background: white;
+    border-radius: 3px;
+    margin-top: 5%;
+    margin-bottom: 10px;
+    padding: 2px;
+    position: relative;
+}
+
+.btn:hover
+{
+    transform: rotateY(36deg) ;
+}
+
+label 
+{
+    color: var(--font-color-deep);
+}
+
+input[type="range"]
+{
+    outline: none;
+}
+

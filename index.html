@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>speech synthesiser</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="app.js"></script>
+</head>
+<body>
+    <section class="container">
+        <div class="app">
+            <div class="head">
+                <h1>Speech synthesiser</h1>
+            </div>
+            <div class="mid">
+                <div class="mid-left">
+                    
+                    <select name="voice" id="voices">
+                        <option value="">Select A voice</option>
+                    </select>
+
+                    <label for="rate">Rate :</label>
+                    <input name="rate" type="range" min="0" max="5" value="1" step="0.1">
+
+                    <label for="pitch">Pitch :</label>
+                    <input name="pitch" type="range" min="0" max="2" step="0.1">
+
+                    <label for="volume">Volume :</label>
+                    <input name="volume" type="range" min="0" max="100" step="5" value="30">
+
+                </div>
+                <div class="mid-right">
+
+                    <textarea name="text" class="textarea" placeholder="Enter text here . . . . . . ." ></textarea>
+
+                </div>
+            </div>
+            <div class="bottom">
+                <button class="stop   btn">Stop</button>
+                <button class="speak  btn">Speak</button>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
